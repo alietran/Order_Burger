@@ -21,18 +21,7 @@ class Item extends Component {
       </div>
     );
 
-    // <div>
-    //   <div className="breadTop">{this.props.burgerdefault}</div>
-    //   <div className="salad"></div>
-    //   <div className="salad"></div>
-    //   <div className="salad"></div>
-    //   <div className="salad"></div>
-    //   <div className="cheese"></div>
-    //   <div className="cheese"></div>
-    //   <div className="beef"></div>
-    //   <div className="beef"></div>
-    //   <div className="breadBottom"></div>
-    // </div>
+ 
   }
 }
 
