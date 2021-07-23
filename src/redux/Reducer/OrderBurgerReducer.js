@@ -1,3 +1,6 @@
+import { tangGiam } from "../Action/OrderBurgerAction";
+import { TANG_GIAM } from "../Type/OrderBurgerType";
+
 const burgerState = {
   burger: [
     { name: "salad", amount: 1, tangGiam: false },
@@ -13,7 +16,7 @@ const burgerState = {
 };
 const OrderBurger = (state = burgerState, action) => {
   switch (action.type) {
-    case "TANG_GIAM": {
+    case TANG_GIAM: {
       let burgerNew = [...state.burger];
       let index = burgerNew.findIndex((sp) => sp.name === action.name);
       if (index !== -1) {

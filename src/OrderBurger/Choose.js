@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import './style.css';
+import {tangGiamAction} from  "../redux/Action/OrderBurgerAction";
 class Choose extends Component {
 
   render() {
@@ -79,12 +80,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     themDoAn: (name, tangGiam) => {
-      let action = {
-        type: "TANG_GIAM",
-        name,
-        tangGiam,
-      };
-      dispatch(action);
+      
+    dispatch(tangGiamAction(name,tangGiam))
     },
   };
 };
