@@ -1,4 +1,4 @@
-import { tangGiam } from "../Action/OrderBurgerAction";
+
 import { TANG_GIAM } from "../Type/OrderBurgerType";
 
 const burgerState = {
@@ -20,7 +20,7 @@ const OrderBurger = (state = burgerState, action) => {
       let burgerNew = [...state.burger];
       let index = burgerNew.findIndex((sp) => sp.name === action.name);
       if (index !== -1) {
-        if (action.tangGiam) burgerNew[index].amount += 1;
+        if (action.tangGiam ) burgerNew[index].amount += 1;
         else {
           if (burgerNew[index].amount > 0) {
             burgerNew[index].amount -= 1;

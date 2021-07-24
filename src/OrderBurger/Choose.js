@@ -18,7 +18,8 @@ class Choose extends Component {
           </thead>
           <tbody>
             {this.props.burger.map((item, index) => {             
-              
+               const tang = true;
+               const giam = false
               return (
                 <tr key={index}>
                   <td >{item.name}</td>
@@ -26,7 +27,7 @@ class Choose extends Component {
                     <button
                       className="btn-success"
                       onClick={() => {
-                        this.props.themDoAn(item.name, true);
+                        this.props.themDoAn(item.name, tang);
                       }}
                     >
                       +
@@ -35,7 +36,7 @@ class Choose extends Component {
                     <button
                       className="btn-danger"
                       onClick={() => {
-                        this.props.themDoAn(item.name, false);
+                        this.props.themDoAn(item.name, giam);
                       }}
                     >
                       -
